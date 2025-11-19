@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/mira-banner.jpg" alt="Mira Docker Control Panel Banner" width="100%">
+</p>
+
 # 🧩 Mira — Docker Control Panel  
 Neon-themed, fast and modern container management UI.
 
