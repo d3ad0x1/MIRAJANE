@@ -79,4 +79,34 @@ npm run dev
 ```
 - API_URL noto‘g‘ri bo‘lishi mumkin.
 
+## 🗂 Loyihaning tuzilishi
+
+- frontend/ — React + Vite asosidagi Mira interfeysi.
+Dev rejimida 5173-port orqali ishlaydi, prod rejimida esa nginx orqali xizmat qiladi.
+- backend/ — Docker boshqaruvi uchun FastAPI API xizmati.
+Asosiy API-servis, konteyner ichidagi port — 8088.
+- mira-data/ — Mira uchun doimiy ma’lumotlar katalogi:
+shablonlar, presetlar, foydalanuvchi sozlamalari.
+Ushbu katalogni muntazam backupga qo‘shish tavsiya etiladi.
+- assets/ — bannerlar, logotiplar va UI tasvirlari.
+- docker-compose.yml — Mira xizmatlarini orkestratsiya qilish fayli.
+- README.md, README_RU.md, README_EN.md — loyiha hujjatlari.
+
+## 🔐 Xavfsizlik
+
+Mira Docker-hostni boshqaradi, demak panelga kirish = serverga to‘liq kirish degani.
+
+Tavsiya etiladi:
+
+- Mirani internetga ochiq holda qo‘ymaslik.
+- Foydalanish:
+    - VPN (WireGuard / OpenVPN / ZeroTier);
+    - ichki tarmoq (LAN);
+    - zarurat bo‘lsa SSH tunnel.
+- Panelni reverse-proxy orqali ishga tushirish:
+    - Nginx / Traefik / Caddy;
+    - HTTPS + Basic Auth / tokenlar / SSO.
+- /var/run/docker.sock bilan ehtiyotkor bo‘lish:
+agar u konteynerga ulangan bo‘lsa, panelga kirgan har qanday foydalanuvchi Dockerga to‘liq root darajasida egalik qiladi.
+
 📄 **License:** [MIT License](LICENSE)

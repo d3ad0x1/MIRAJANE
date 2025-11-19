@@ -79,4 +79,34 @@ npm run dev
 ```
 - The API_URL parameter in .env may be incorrect.
 
+## 🗂 Project Structure
+
+- frontend/ — Mira UI built with React + Vite.
+Runs on port 5173 in development, and behind nginx in production.
+- backend/ — FastAPI-based API for Docker management.
+Main API service, exposed on port 8088 inside the container.
+- mira-data/ — Persistent data storage for Mira:
+templates, presets, user configurations.
+It is recommended to include this directory in scheduled backups.
+- assets/ — banners, logos, and UI images.
+- docker-compose.yml — defines and orchestrates all Mira services.
+- README.md, README_RU.md, README_EN.md — project documentation in different languages.
+
+## 🔐 Security
+
+Mira controls your Docker host, which means access to the panel = access to the entire server.
+
+Recommended best practices:
+
+- Do not expose Mira directly to the public Internet.
+- Use:
+    - VPN (WireGuard / OpenVPN / ZeroTier);
+    - internal network (LAN);
+    - SSH tunnels if needed.
+- Place Mira behind a secure reverse proxy:
+    - Nginx / Traefik / Caddy;
+    - HTTPS + Basic Auth / tokens / SSO.
+- Be extremely careful with /var/run/docker.sock:
+if it is mounted into the container, anyone with access to Mira gets root-level control over Docker.
+
 📄 **License:** [MIT License](LICENSE)
