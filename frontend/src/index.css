@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #020617 0, #020617 40%, #020617 100%);
+  color: #e5f4ff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
+    "Segoe UI", sans-serif;
+}
+
+/* ссылки без синего дефолта */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Кастомный скролл — Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #38e8ff #020617;
+}
+
+/* Кастомный скролл — WebKit (Chrome/Edge) */
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #020617;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(
+    180deg,
+    #38e8ff 0%,
+    #4f46e5 60%,
+    #020617 100%
+  );
+  border-radius: 9999px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-image: linear-gradient(
+    180deg,
+    #4be3ff 0%,
+    #6366f1 60%,
+    #020617 100%
+  );
+}

@@ -1,0 +1,56 @@
+[
+  {
+    "id": "basic-nginx",
+    "name": "Basic Nginx",
+    "description": "Simple Nginx container exposing port 80.",
+    "image": "nginx:alpine",
+    "default_ports": [
+      {
+        "host_port": 8080,
+        "container_port": 80,
+        "protocol": "tcp"
+      }
+    ],
+    "default_env": {},
+    "default_volumes": []
+  },
+  {
+    "id": "mira-web",
+    "name": "Mira Web",
+    "description": "Frontend for Mira served by Nginx.",
+    "image": "nginx:alpine",
+    "default_ports": [
+      {
+        "host_port": 8089,
+        "container_port": 80,
+        "protocol": "tcp"
+      }
+    ],
+    "default_env": {},
+    "default_volumes": []
+  },
+  {
+    "id": "mariadb-basic",
+    "name": "MariaDB Basic",
+    "description": "MariaDB database with default environment variables.",
+    "image": "mariadb:11",
+    "default_ports": [
+      {
+        "host_port": null,
+        "container_port": 3306,
+        "protocol": "tcp"
+      }
+    ],
+    "default_env": {
+      "MYSQL_ROOT_PASSWORD": "root",
+      "MYSQL_DATABASE": "app"
+    },
+    "default_volumes": [
+      {
+        "volume_name": "mariadb_data",
+        "mountpoint": "/var/lib/mysql",
+        "read_only": false
+      }
+    ]
+  }
+]

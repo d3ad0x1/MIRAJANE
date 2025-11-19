@@ -1,0 +1,45 @@
+# --- Node / Vite frontend ---
+node_modules/
+dist/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+
+frontend/node_modules/
+frontend/dist/
+web/node_modules/
+web/dist/
+
+# --- Python / FastAPI ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.env
+venv/
+.venv/
+.env.*
+*.sqlite3
+
+# --- Docker ---
+docker-compose.override.yml
+.env.docker.local
+.tmp/
+tmp/
+log/
+logs/
+
+# Docker volumes / runtime data
+data/
+volumes/
+
+# --- IDE / редакторы ---
+.vscode/
+.idea/
+*.iml
+
+# --- Системное ---
+.DS_Store
+Thumbs.db
