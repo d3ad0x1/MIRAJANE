@@ -3,7 +3,7 @@ Neon-themed, fast and modern container management UI.
 
 ---
 
-# 🇺🇿 O‘zbekcha (Latin)
+# 🇺🇿 O‘zbekcha
 
 ## 🚀 Mira haqida
 **Mira — bu Docker konteynerlari, tarmoqlar, obrazlar, volumelar va shablonlarni boshqarish uchun zamonaviy veb-panel.**  
