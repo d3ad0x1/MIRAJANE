@@ -78,3 +78,5 @@ docker compose logs api -f
 npm run dev
 ```
 - API_URL noto‘g‘ri bo‘lishi mumkin.
+
+📄 **License:** [MIT License](LICENSE)

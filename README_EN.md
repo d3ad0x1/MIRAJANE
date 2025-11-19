@@ -78,3 +78,5 @@ docker compose logs api -f
 npm run dev
 ```
 - The API_URL parameter in .env may be incorrect.
+
+📄 **License:** [MIT License](LICENSE)
