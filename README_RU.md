@@ -23,6 +23,28 @@
 
 ---
 
+## 📸 Screenshots
+
+### 🧱 Dashboard / Containers
+<p align="center">
+  <img src="assets/screens/containers.png" width="100%" alt="Containers page">
+</p>
+
+### 📦 Images
+<p align="center">
+  <img src="assets/screens/images.png" width="100%" alt="Docker Images page">
+</p>
+
+### 🌐 Networks
+<p align="center">
+  <img src="assets/screens/networks.png" width="100%" alt="Docker Networks">
+</p>
+
+### 📝 Templates
+<p align="center">
+  <img src="assets/screens/templates.png" width="100%" alt="Templates UI">
+</p>
+
 ## 📦 Установка
 
 ### 1️⃣ Клонирование репозитория
