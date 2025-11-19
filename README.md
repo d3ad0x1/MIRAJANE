@@ -26,24 +26,24 @@ Kuchli tomonlari:
 ## 📸 Screenshots
 
 ### 🧱 Dashboard / Containers
-<p align="center">
-  <img src="assets/screens/containers.png" width="100%" alt="Containers page">
-</p>
+<div align="center" style="padding: 10px; border-radius: 12px; background: #0d0d18; border: 2px solid rgba(99,102,241,0.6); box-shadow: 0 0 15px rgba(99,102,241,0.8); margin-bottom: 20px;">
+  <img src="assets/screens/containers.png" alt="Containers page" style="width:100%; border-radius: 8px;">
+</div>
 
 ### 📦 Images
-<p align="center">
-  <img src="assets/screens/images.png" width="100%" alt="Docker Images page">
-</p>
+<div align="center" style="padding: 10px; border-radius: 12px; background: #0d0d18; border: 2px solid rgba(139,92,246,0.6); box-shadow: 0 0 15px rgba(139,92,246,0.8); margin-bottom: 20px;">
+  <img src="assets/screens/images.png" alt="Images page" style="width:100%; border-radius: 8px;">
+</div>
 
 ### 🌐 Networks
-<p align="center">
-  <img src="assets/screens/networks.png" width="100%" alt="Docker Networks">
-</p>
+<div align="center" style="padding: 10px; border-radius: 12px; background: #0d0d18; border: 2px solid rgba(56,189,248,0.6); box-shadow: 0 0 15px rgba(56,189,248,0.8); margin-bottom: 20px;">
+  <img src="assets/screens/networks.png" alt="Networks page" style="width:100%; border-radius: 8px;">
+</div>
 
 ### 📝 Templates
-<p align="center">
-  <img src="assets/screens/templates.png" width="100%" alt="Templates UI">
-</p>
+<div align="center" style="padding: 10px; border-radius: 12px; background: #0d0d18; border: 2px solid rgba(14,165,233,0.6); box-shadow: 0 0 15px rgba(14,165,233,0.8); margin-bottom: 20px;">
+  <img src="assets/screens/templates.png" alt="Templates page" style="width:100%; border-radius: 8px;">
+</div>
 
 ## 📦 O‘rnatish
 
@@ -130,5 +130,63 @@ Tavsiya etiladi:
     - HTTPS + Basic Auth / tokenlar / SSO.
 - /var/run/docker.sock bilan ehtiyotkor bo‘lish:
 agar u konteynerga ulangan bo‘lsa, panelga kirgan har qanday foydalanuvchi Dockerga to‘liq root darajasida egalik qiladi.
+
+## 🛣 Roadmap (yo‘l xaritasi)
+
+### ✅ Joriy holat (v0.1 — Core UI)
+
+- [x] Konteynerlar paneli (start / stop / restart / remove)
+- [x] Konteyner holati va asosiy statistikani ko‘rish
+- [x] Docker imijlar ro‘yxati, imijlarni o‘chirish
+- [x] Tarmoqlarni boshqarish (yaratish / o‘chirish)
+- [x] Volumelarni boshqarish
+- [x] Shablonlar asosida konteynerlarni yaratish (presets)
+- [x] Docker Compose orkestratsiyasi (backend + frontend)
+- [x] Neon / cyberpunk uslubidagi Mira UI
+
+---
+
+### 🔐 v0.2 — Avtorizatsiya va rollar
+
+- [ ] Panel ichida avtorizatsiya (login/parol)
+- [ ] Foydalanuvchi rollari:
+  - [ ] `admin` — Mira va Docker bo‘yicha to‘liq huquqlarga ega
+  - [ ] `read-only` — faqat ko‘rish rejimi
+- [ ] Amallarni cheklash (masalan, read-only uchun konteyner/imij o‘chirishni bloklash)
+- [ ] Avtorizatsiyani nginx/traefik orqali tashqariga chiqarish imkoniyati (Basic Auth / SSO)
+
+---
+
+### 🧩 v0.3 — Shablonlar va presetlar
+
+- [ ] Moslashuvchan shablonlar (docker run / docker compose)
+- [ ] Tayyor presetlar galereyasi (nginx + php-fpm, db + app va boshqalar)
+- [ ] Shablonlarni eksport/import qilish (JSON/YAML)
+- [ ] Shablonlarni `mira-data/` katalogiga bog‘lash (qulay backup uchun)
+
+---
+
+### 📈 v0.4 — Monitoring va qulayliklar (QoL)
+
+- [ ] Batafsil konteyner statistikasi (CPU, RAM, disk yuklanishi)
+- [ ] Konteyner loglari (filtrlash + live-update)
+- [ ] Qidiruv va filtrlar (konteynerlar / imijlar / tarmoqlar bo‘yicha)
+- [ ] Yorug‘ / qorong‘i tema (theme switcher)
+- [ ] UI lokalizatsiyasi (RU / EN / UZ)
+
+---
+
+### 🚀 v0.5 — Integratsiyalar va prodakshn
+
+- [ ] Bir nechta Docker-hostlarni qo‘llab-quvvatlash (multi-node / remote Docker API)
+- [ ] Mira sozlamalarini UI orqali boshqarish (.env tahririsiz)
+- [ ] Mira konfiguratsiyasining backup/restore funksiyasi
+- [ ] Tashqi monitoring tizimlari bilan integratsiya (Prometheus / Loki / Grafana — imkoniyatga qarab)
+
+---
+
+> Roadmap yakuniy emas — Mira rivojlanishi jarayonida o‘zgarishi mumkin. 
+> Takliflar va g‘oyalarni Issues yoki Pull requests orqali yuborish mumkin.
+
 
 📄 **License:** [MIT License](LICENSE)

@@ -26,24 +26,24 @@
 ## 📸 Screenshots
 
 ### 🧱 Dashboard / Containers
-<p align="center">
-  <img src="assets/screens/containers.png" width="100%" alt="Containers page">
-</p>
+<div align="center" style="padding: 10px; border-radius: 12px; background: #0d0d18; border: 2px solid rgba(99,102,241,0.6); box-shadow: 0 0 15px rgba(99,102,241,0.8); margin-bottom: 20px;">
+  <img src="assets/screens/containers.png" alt="Containers page" style="width:100%; border-radius: 8px;">
+</div>
 
 ### 📦 Images
-<p align="center">
-  <img src="assets/screens/images.png" width="100%" alt="Docker Images page">
-</p>
+<div align="center" style="padding: 10px; border-radius: 12px; background: #0d0d18; border: 2px solid rgba(139,92,246,0.6); box-shadow: 0 0 15px rgba(139,92,246,0.8); margin-bottom: 20px;">
+  <img src="assets/screens/images.png" alt="Images page" style="width:100%; border-radius: 8px;">
+</div>
 
 ### 🌐 Networks
-<p align="center">
-  <img src="assets/screens/networks.png" width="100%" alt="Docker Networks">
-</p>
+<div align="center" style="padding: 10px; border-radius: 12px; background: #0d0d18; border: 2px solid rgba(56,189,248,0.6); box-shadow: 0 0 15px rgba(56,189,248,0.8); margin-bottom: 20px;">
+  <img src="assets/screens/networks.png" alt="Networks page" style="width:100%; border-radius: 8px;">
+</div>
 
 ### 📝 Templates
-<p align="center">
-  <img src="assets/screens/templates.png" width="100%" alt="Templates UI">
-</p>
+<div align="center" style="padding: 10px; border-radius: 12px; background: #0d0d18; border: 2px solid rgba(14,165,233,0.6); box-shadow: 0 0 15px rgba(14,165,233,0.8); margin-bottom: 20px;">
+  <img src="assets/screens/templates.png" alt="Templates page" style="width:100%; border-radius: 8px;">
+</div>
 
 ## 📦 Установка
 
@@ -130,5 +130,63 @@ Mira управляет Docker-хостом, поэтому доступ к па
     - HTTPS + базовая авторизация / токены / SSO.
 - Осторожно работать с /var/run/docker.sock:
 при его пробросе в контейнер любой доступ к панели = root над Docker.
+
+## 🛣 Roadmap
+
+### ✅ Текущий статус (v0.1 — Core UI)
+
+- [x] Панель контейнеров (start / stop / restart / remove)
+- [x] Просмотр статуса контейнеров и базовой статистики
+- [x] Список Docker-образов, удаление образов
+- [x] Управление сетями (создание / удаление)
+- [x] Управление томами (volumes)
+- [x] Базовая работа с шаблонами (создание контейнеров из пресетов)
+- [x] Docker Compose оркестрация (backend + frontend)
+- [x] Неоновый / киберпанк UI в стиле Mira
+
+---
+
+### 🔐 v0.2 — Авторизация и роли
+
+- [ ] Встроенная авторизация в панель (логин/пароль)
+- [ ] Роли пользователей:
+  - [ ] `admin` — полный доступ к Mira и Docker
+  - [ ] `read-only` — только просмотр состояния
+- [ ] Ограничение операций (запрет удаления контейнеров/образов для read-only)
+- [ ] Возможность вынести авторизацию за Nginx/Traefik (Basic Auth / SSO)
+
+---
+
+### 🧩 v0.3 — Шаблоны и пресеты
+
+- [ ] Гибкие шаблоны развёртывания (docker run / docker compose)
+- [ ] Галерея пресетов (готовые стек-и: nginx + php-fpm, db + app, etc.)
+- [ ] Экспорт / импорт шаблонов (JSON/YAML)
+- [ ] Привязка шаблонов к `mira-data/` для удобного бэкапа
+
+---
+
+### 📈 v0.4 — Мониторинг и качество жизни
+
+- [ ] Более подробная статистика контейнеров (CPU, RAM, дисковая нагрузка)
+- [ ] Логи контейнеров с фильтрацией и live-update
+- [ ] Поиск и фильтрация по контейнерам / образам / сетям
+- [ ] Тёмная / светлая тема (theme switcher)
+- [ ] Локализация интерфейса (RU / EN / UZ)
+
+---
+
+### 🚀 v0.5 — Интеграции и продакшн
+
+- [ ] Поддержка нескольких Docker-хостов (multi-node / remote Docker API)
+- [ ] Настройки Mira через UI (без правки .env)
+- [ ] Backup/restore настроек Mira
+- [ ] Интеграция с внешним мониторингом (Prometheus / Loki / Grafana — по возможности)
+
+---
+
+> Roadmap не зацементирован: задачи могут меняться по мере развития Mira.  
+> Предложения по фичам можно кидать в Issues / Pull requests.
+
 
 📄 **License:** [MIT License](LICENSE)
