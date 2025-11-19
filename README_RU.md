@@ -27,7 +27,7 @@
 
 ### 1️⃣ Клонирование репозитория
 ```bash
-git clone https://github.com/d3ad0x1/mirajane-mira-panel.git
+git clone https://github.com/d3ad0x1/MIRAJANE.git
 cd mirajane-mira-panel
 ```
 
