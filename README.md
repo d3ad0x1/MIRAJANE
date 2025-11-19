@@ -7,7 +7,7 @@ Neon-themed, fast and modern container management UI.
 
 ## 🚀 Mira haqida
 **Mira — bu Docker konteynerlari, tarmoqlar, obrazlar, volumelar va shablonlarni boshqarish uchun zamonaviy veb-panel.**  
-Panel React + Vite + Tailwind asosida qurilgan, backend esa FastAPI (Python) yoki PHP (Slim) orqali ishlaydi.
+Panel React + Vite + Tailwind asosida qurilgan, backend esa FastAPI (Python).
 
 Kuchli tomonlari:
 - 🔥 Real vaqtli konteyner monitoringi  
