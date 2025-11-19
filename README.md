@@ -23,7 +23,7 @@ Kuchli tomonlari:
 
 ### 1️⃣ Repozitoriyani klonlash
 ```bash
-git clone https://github.com/YOURNAME/mirajane-mira-panel.git
+git clone https://github.com/d3ad0x1/mirajane-mira-panel.git
 cd mirajane-mira-panel
 ```
 
