@@ -1,5 +1,5 @@
 const RAW_API_BASE_URL =
-  import.meta.env.VITE_API_BASE_URL ?? "http://10.11.12.185:8088/api/v1";
+  import.meta.env.VITE_API_BASE_URL ?? "http://localhost:8088/api/v1";
 
 const API_BASE_URL = RAW_API_BASE_URL.replace(/\/+$/, ""); // без хвостового слеша
 
