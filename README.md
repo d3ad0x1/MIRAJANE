@@ -23,24 +23,24 @@ Kuchli tomonlari:
 
 ---
 
-## 📸 Screenshots
+## 📸 Skrinshotlar
 
-### 🧱 Dashboard / Containers
+### 🧱 Panel / Konteynerlar
 <div align="center" style="padding: 10px; border-radius: 12px; background: #0d0d18; border: 2px solid rgba(99,102,241,0.6); box-shadow: 0 0 15px rgba(99,102,241,0.8); margin-bottom: 20px;">
   <img src="assets/screens/containers.png" alt="Containers page" style="width:100%; border-radius: 8px;">
 </div>
 
-### 📦 Images
+### 📦 Obrazlar
 <div align="center" style="padding: 10px; border-radius: 12px; background: #0d0d18; border: 2px solid rgba(139,92,246,0.6); box-shadow: 0 0 15px rgba(139,92,246,0.8); margin-bottom: 20px;">
   <img src="assets/screens/images.png" alt="Images page" style="width:100%; border-radius: 8px;">
 </div>
 
-### 🌐 Networks
+### 🌐 Tarmoqlar
 <div align="center" style="padding: 10px; border-radius: 12px; background: #0d0d18; border: 2px solid rgba(56,189,248,0.6); box-shadow: 0 0 15px rgba(56,189,248,0.8); margin-bottom: 20px;">
   <img src="assets/screens/networks.png" alt="Networks page" style="width:100%; border-radius: 8px;">
 </div>
 
-### 📝 Templates
+### 📝 Shablonlar
 <div align="center" style="padding: 10px; border-radius: 12px; background: #0d0d18; border: 2px solid rgba(14,165,233,0.6); box-shadow: 0 0 15px rgba(14,165,233,0.8); margin-bottom: 20px;">
   <img src="assets/screens/templates.png" alt="Templates page" style="width:100%; border-radius: 8px;">
 </div>
