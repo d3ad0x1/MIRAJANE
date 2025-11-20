@@ -2,7 +2,7 @@ import { api } from "./client";
 
 const API_BASE =
   import.meta.env.VITE_API_BASE_URL ??
-  "http://10.11.12.185:8088/api/v1";
+  "http://localhost:8088/api/v1";
 
 export type ImageSummary = {
   id: string;
