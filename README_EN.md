@@ -188,5 +188,23 @@ if it is mounted into the container, anyone with access to Mira gets root-level 
 > Roadmap is not set in stone — features may change as Mira evolves.  
 > Feature requests and ideas are welcome via Issues / Pull requests.
 
+## 🔖 Topics
+
+<p align="left">
+
+  <img src="https://img.shields.io/badge/docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
+  <img src="https://img.shields.io/badge/docker%20manager-8A2BE2?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/docker%20tools-32CD32?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/devops-F05032?style=for-the-badge&logo=gitlab&logoColor=white" />
+  <img src="https://img.shields.io/badge/sysadmin-0A66C2?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=black" />
+  <img src="https://img.shields.io/badge/vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" />
+  <img src="https://img.shields.io/badge/tailwind-38B2AC?style=for-the-badge&logo=tailwindcss&logoColor=white" />
+  <img src="https://img.shields.io/badge/fastapi-009688?style=for-the-badge&logo=fastapi&logoColor=white" />
+  <img src="https://img.shields.io/badge/cyberpunk%20UI-AA00FF?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/neon%20UI-7F00FF?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/mira-6C2AE8?style=for-the-badge" />
+
+</p>
 
 📄 **License:** [MIT License](LICENSE)
