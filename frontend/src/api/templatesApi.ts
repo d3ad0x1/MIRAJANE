@@ -19,7 +19,7 @@ export type TemplateSummary = {
 
 const API_BASE =
   import.meta.env.VITE_API_BASE_URL ??
-  "http://10.11.12.185:8088/api/v1";
+  "http://localhost:8088/api/v1";
 
 export async function fetchTemplates(): Promise<TemplateSummary[]> {
   return api.get<TemplateSummary[]>("/templates");
